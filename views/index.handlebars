@@ -3,49 +3,56 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link" href="#">Features</a>
       </div>
-      <h1> Sam Jones, Web Developer (Page under construction)</h1>
+      <h1> Sam Jones, Web Developer </h1>
     </div>
   </nav>
-
-<ul class='list-group'>
-
-<li class='list-group item' >
-<a href='https://github.com/penoutlet/imdb-search'><button class='btn btn-danger'>IMDB Search Repo </button></a>
-|
-<a href='http://imdb-search-samjones.herokuapp.com/'><button class='btn btn-warning'> Heroku </button> </a>
-<p class='speech-bubble'> Find out all about your favorite movies using the spotify API! </p>
-</li>
-
-<a href='https://github.com/penoutlet/UFO-DB'><button class='btn btn-danger'> UFO DB </button></a>
-|
-<a href-'http://ufo-sightings.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
-<p class='speech-bubble'> Search through 80,000 ufo sightings with UFO DB. </p>
-
-<a href='https://github.com/penoutlet/shiftbank'><button class='btn btn-danger'> Shiftbank </button> </a>
-<a href='https://immense-bastion-77041.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
-<p class='speech-bubble'> Create a user, a profile, and view other users and profiles. (Ongoing project) </p>
-
-<button class='btn btn-danger'> Trendicity (???) </button>
-<a href='http://trendicity.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
-<p class='speech-bubble'> Check out and chat about the hottest twitter topics currently trending
-in Orlando. </p>
+<div class='col-md-5'>
+  <div class='row'>
+    <a href='https://github.com/penoutlet/imdb-search'><button class='btn btn-danger'>IMDB Search Repo </button></a>
+    |
+    <a href='http://imdb-search-samjones.herokuapp.com/'><button class='btn btn-warning'> Heroku </button> </a>
+    <p class='speech-bubble'> Find out all about your favorite movies using the spotify API! </p>
 
 
+    <a href='https://github.com/penoutlet/UFO-DB'><button class='btn btn-danger'> UFO DB </button></a>
+    |
+    <a href-'http://ufo-sightings.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
+    <p class='speech-bubble'> Search through 80,000 ufo sightings with UFO DB. </p>
 
+    <a href='https://github.com/penoutlet/shiftbank'><button class='btn btn-danger'> Shiftbank </button> </a>
+    <a href='https://immense-bastion-77041.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
+    <p class='speech-bubble'> Create a user, a profile, and view other users and profiles. (Ongoing project) </p>
 
-</ul>
+    <button class='btn btn-danger'> Trendicity (???) </button>
+    <a href='http://trendicity.herokuapp.com/'> <button class='btn btn-warning'> Heroku </button> </a>
+    <p class='speech-bubble'> Check out and chat about the hottest twitter topics currently trending
+    in Orlando. </p>
 
+  </div>
+</div>
+
+<div class='col-md-5'>
+  <div class='row'>
+    <div id='bio'>
+      <h2> Bio </h2>
+      Hi, I'm Sam. I am interested in working full-time as a web-developer. My background is in Psychology (B.S.), where I first programmed in R.
+    Following graduation, I spent a semester in a M.S. Geography program, where again, I programmed in R. Subsequently, I left the M.S. program to pursue
+    programming, since I enjoyed it so much. I have a certificate from the UCF Coding Bootcamp. Javascript, Node.JS, Express, Handlebars, React.js, MySQL and MongoDB are my core proficiencies.
+    Currently I am looking for corporate or startup employment in the Orlando, FL area. View my linkedin page for more info.
+
+    <a href='https://www.linkedin.com/in/samuel-jones-b930a455/'> <button class='btn btn-primary'> LinkedIn </button> </a>
+
+  </div>
+  </p>
+</div>
 </div>
 <style>
-ul{
-  /*background:
-linear-gradient(135deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px),
-linear-gradient(225deg, #708090 22px, #d9ecff 22px, #d9ecff 24px, transparent 24px, transparent 67px, #d9ecff 67px, #d9ecff 69px, transparent 69px)0 64px;
-background-color:#708090;
-background-size: 64px 128px*/
+#bio{
+  background: #00aabb;
+  text-align: center;
+  border-radius: .4em;
+
 }
 .speech-bubble {
 	position: relative;
@@ -56,6 +63,33 @@ background-size: 64px 128px*/
 }
 
 .speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #00aabb;
+	border-left: 0;
+	border-bottom: 0;
+	margin-top: -10px;
+	margin-left: -20px;
+}
+.speech-bubble-bio {
+	position: relative;
+	background: #00aabb;
+	border-radius: .4em;
+  height:200px;
+  width:300px
+}
+h1 {
+  text-align: center;
+}
+h2{
+  text-align:center;
+}
+.speech-bubble-bio:after {
 	content: '';
 	position: absolute;
 	left: 0;
